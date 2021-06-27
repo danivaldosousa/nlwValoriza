@@ -21,7 +21,6 @@ class Compliment {
 
   @Column()
   tag_id: string;
-
   @JoinColumn({ name: "tag_id" })
   @ManyToOne(() => Tag)
   tag: Tag;
@@ -37,6 +36,5 @@ class Compliment {
       this.id = uuid();
     }
   }
-
 }
 export { Compliment }

@@ -21,7 +21,7 @@ export class CreateCompliments1624621581279 implements MigrationInterface {
                         type: "uuid"
                     },
                     {
-                        name: "tag-id",
+                        name: "tag_id",
                         type: "uuid"
                     },
                     {
@@ -53,7 +53,7 @@ export class CreateCompliments1624621581279 implements MigrationInterface {
                     },
                     {
                         name: "FKUserTagCompliments",
-                        referencedTableName: "tag",
+                        referencedTableName: "tags",
                         referencedColumnNames: ["id"],
                         columnNames: ["tag_id"],
                         onDelete: "SET NULL",
